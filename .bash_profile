@@ -16,6 +16,12 @@ export COLOR_YELLOW='\e[1;33m'
 export COLOR_GRAY='\e[0;30m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
 
+alias gti="git"
+alias itg="git"
+alias got="git"
+
+alias github="open /Applications/GitHub\ Desktop.app"
+
 parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
